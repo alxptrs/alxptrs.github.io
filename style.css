@@ -425,6 +425,6 @@ a:hover {
 #brand .columns{flex-direction: column;}
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
 header h1{font-size: 2em;}
 }
