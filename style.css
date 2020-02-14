@@ -430,6 +430,6 @@ a:hover {
 }
 
 @media only screen and (max-width: 400px) {
-h1{font-size: 2.4em;}
+h1{font-size: 2em;}
 html.fadeSiteOut {animation:  none;}
 }
