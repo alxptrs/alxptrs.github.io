@@ -59,8 +59,8 @@ header {
 }
 
 main {
-  max-width: 90ch;
-  padding: 3ch;
+  max-width: 62.5vw;
+  padding: 20px;
   margin: auto;
 }
 h1 {
