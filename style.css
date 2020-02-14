@@ -60,7 +60,7 @@ header {
 
 main {
   max-width: 90ch;
-  padding: 26px;
+  padding: 3ch;
   margin: auto;
 }
 h1 {
@@ -427,4 +427,8 @@ a:hover {
 #three .columns{flex-direction: column;}
 #three .content img{max-width: 250px;}
 #brand .columns{flex-direction: column;}
+}
+
+@media only screen and (max-width: 375px) {
+h1{font-size: 2.4em;}
 }
