@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Akkurat;
+  src: url(fonts/Akkurat.ttf);
+}
+
 html{
   animation: fadeSiteIn .5s ease forwards;
 }
