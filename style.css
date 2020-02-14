@@ -158,14 +158,13 @@ a:hover {
 }
 .arrow{
   position: absolute;
-  left: calc(50% - 24px);
+  left: calc(50% - 30px);
   bottom: 40px;
   margin: 0px auto;
   width: 30px;
   height: 30px;
   text-align: center;
   font-size: 32px;
-  border-radius: 20px;
   animation-name: bounce;
   animation-duration: 2s;
 }
@@ -432,4 +431,5 @@ a:hover {
 @media only screen and (max-width: 400px) {
 h1{font-size: 2em;}
 html.fadeSiteOut {animation:  none;}
+.arrow{left: calc(50%);
 }
