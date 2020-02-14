@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang=en>
+<head>
+  <title>Alex Peters | Designer - SportsHi: iOS and Android App</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="img/fav.ico" type="image/x-icon">
+  <link rel="icon" href="img/fav.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/xgd1upn.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html"><div class="logo">Alex Peters</div></a>
+    <div class="nav-links">
+      <a href="#footer">Contact</a>
+      <a href="http://linkedin.com/in/alexpetersdesign">LinkedIn</a>
+    </div>
+  </nav>
+
+<main>
+  <div class="spacer"></div>
+  <div class="work-full"><img src="img/app/header.jpg" /></div>
+  </div>
+
+    <h1>SportsHi From Ideation to Launch<br>–</h1>
+    <p>We set out the create the home of high school sports. After a simple MVP and many iterations thereafter, our team has created a dynamic product serving the interests of athletes, coaches, and fans. SportsHi's primary focuses are communication among players and teams, college connections, and high school sports content.</p>
+
+  <div class="spacer"></div>
+
+
+  <div style="border-bottom: 1px solid white;"></div>
+
+  <div class="spacer"></div>
+
+  <h1>Additional Case Studies</h1>
+
+  <p class="overline"><span class="overline-text">COLLEGE CONNECTION</span></p>
+     <a href="sportshi-colleges.html"><h2>Building a Cross-Platform Connection&nbsp;Tool ⇢</h2></a>
+  <p class="overline"><span class="overline-text">DESIGN SYSTEM</span></p>
+     <a href="sportshi-system.html"><h2>Designing a Unified System ⇢</h2></a>
+
+  <div class="spacer"></div>
+
+</main>
+<div id="footer">
+<h1>Interested in working together?</h1>
+I'm available for product design roles.<br>Shoot me an email or contact me on LinkedIn.
+<div class="links"><a class="link" href="mailto:alex@alexpeters.design">Email</a><a class="link" href="http://linkedin.com/in/alexpetersdesign">LinkedIn</a><a class="link" href="#">Resume</a></div>
+</div>
+</body>
+</html>

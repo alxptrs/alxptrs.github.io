@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang=en>
+<head>
+  <title>Alex Peters | Designer - SportsHi: Design System</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="img/fav.ico" type="image/x-icon">
+  <link rel="icon" href="img/fav.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/xgd1upn.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html"><div class="logo">Alex Peters</div></a>
+    <div class="nav-links">
+      <a href="#footer">Contact</a>
+      <a href="http://linkedin.com/in/alexpetersdesign">LinkedIn</a>
+    </div>
+  </nav>
+
+<main>
+    <div class="spacer"></div>
+    <div class="work-full"><img src="img/design-system/header.jpg" /></div>
+  </div>
+
+    <h1>Designing a Unified System<br>–</h1>
+    <p>We launched the SportsHi MVP in late 2018. At that time, the idea of the product and company were still evolving. Over the course of the next year, design and engineering of new features was rapid and ad hoc. This lead to inconsistencies throughout the UI/UX. It was clear we needed an overarching system to guide our design.</p>
+    <p>In mid-2019, I began research on design systems and planned a course of action for implementation at SportsHi. Today, with an in-house engineering team, research and user testing, a clear vision of the product, and an active user-base, we are rebuilding the product from the ground-up with the SportsHi Design System keeping the digital experience consistent.</p>
+
+  <div class="spacer"></div>
+  <h2>Inventory</h2>
+  After research, the first step was to conduct an inventory/internal audit of the app. It revealed inconsistencies in components, a varied palette with too many HEX codes, and contrasting UX patterns.
+  <div style="margin: 0px auto; text-align: center; padding-top: 40px;"><img width="80%" src="img/design-system/inventory.jpg" /></div><p style="text-align: center; font-size: 10px;">Screenshots, screenshots, screenshots!<br></p>
+
+  <div class="spacer"></div>
+  <h2>Colors</h2>
+
+  <div class="spacer"></div>
+  <h2>Typography</h2>
+
+  <div class="spacer"></div>
+  <h2>Icon System</h2>
+
+  <div class="spacer"></div>
+
+  <h2>Documentation</h2>
+  The SportsHi Design System has been made available internally in the form of a Sketch UI Kit library. The goal is to create an online tool for use by designers and developers containing all desing guidelines, files, and a component library for React Native.
+    <p class="button"><span class="button-text">Download Sketch UI Kit</span></p>
+
+  <div class="spacer"></div>
+  <div style="border-bottom: 1px solid white;"></div>
+  <div class="spacer"></div>
+
+  <h1>Additional Case Studies</h1>
+
+  <p class="overline"><span class="overline-text">iOS & ANDROID APP</span></p>
+     <a href="sportshi-app.html"><h2>SportsHi From Ideation to&nbsp;Launch ⇢</h2></a>
+  <p class="overline"><span class="overline-text">COLLEGE CONNECTION</span></p>
+     <a href="sportshi-colleges.html"><h2>Building a Cross-Platform Connection&nbsp;Tool ⇢</h2></a>
+
+  <div class="spacer"></div>
+
+</main>
+<div id="footer">
+<h1>Interested in working together?</h1>
+I'm available for product design roles.<br>Shoot me an email or contact me on LinkedIn.
+<div class="links"><a class="link" href="mailto:alex@alexpeters.design">Email</a><a class="link" href="http://linkedin.com/in/alexpetersdesign">LinkedIn</a><a class="link" href="#">Resume</a></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,425 @@
+html{
+  animation: fadeSiteIn .5s ease forwards;
+}
+html.fadeSiteOut {
+  animation:  fadeSiteOut .5s ease forwards; /* [2] */
+}
+body {
+  font-family: Akkurat,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  background-color: black;
+  line-height: 1.5;
+  margin: 0;
+  color: white;
+}
+nav {
+  width: 100%;
+  background-color: black;
+  border-bottom: 1px solid white;
+  position: fixed;
+  z-index: 2;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links a {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 10px;
+  color: white;
+}
+.logo{
+  display: inline-block;
+  background: blue;
+  padding: 10px;
+  margin: 2ch;
+  color: white;
+}
+
+header {
+  height: 100vh;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein 4s; /* Firefox < 16 */
+    -ms-animation: fadein 4s; /* Internet Explorer */
+     -o-animation: fadein 4s; /* Opera < 12.1 */
+        animation: fadein 4s;
+}
+
+main {
+  max-width: 90ch;
+  padding: 3ch;
+  margin: auto;
+}
+h1 {
+  font-size: 3em;
+  font-family: Akkurat,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h2 {
+  font-size: 2em;
+  font-family: Akkurat,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 2rem;
+}
+.alex{
+  position: absolute;
+  left: 10%;
+  z-index:-1;
+  opacity: .4;
+  width: 200px;
+  height: 300px;
+  background: url('img/alex.jpg');
+  background-size: auto;
+  background-position: center;
+  background-color: blue;
+  background-blend-mode: multiply;
+}
+.alex-outline{
+  opacity: .6;
+  position: absolute;
+  left: 13%;
+  margin-top: 6%;
+  z-index:0;
+  width: 200px;
+  height: 300px;
+  border: 1px solid white;
+}
+.alex-gradient{
+  opacity: .5;
+  position: absolute;
+  left: 10%;
+  z-index:-1;
+  width: 200px;
+  height: 300px;
+  background: linear-gradient(229deg, #c02425, #f0cb35);
+  background-size: 400% 400%;
+
+  -webkit-animation: gradient 16s ease infinite;
+  -moz-animation: gradient 16s ease infinite;
+  animation: gradient 16s ease infinite;
+}
+
+.overline{
+  margin-bottom: -8px;
+}
+.overline-text{
+  font-family: proxima-nova,sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 8px;
+  background-color: blue;
+  color: white;
+}
+
+.button{
+  margin-bottom: -8px;
+}
+.button-text{
+  font-family: proxima-nova,sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 8px;
+  background-color: blue;
+  color: white;
+}
+
+.button-text:hover{
+  background-color: darkblue;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  outline: 0;
+}
+a:hover {
+  text-decoration: underline;
+}
+::selection {
+  background-color: blue;
+  color: white;
+}
+.arrow{
+  position: absolute;
+  left: calc(50% - 24px);
+  bottom: 40px;
+  margin: 0px auto;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 32px;
+  border-radius: 20px;
+  animation-name: bounce;
+  animation-duration: 2s;
+}
+
+.spacer{
+  height: 100px;
+}
+#description{
+  padding-top: 100px;
+  font-size: 26px;
+  padding-bottom: 100px;
+}
+#description a{
+  padding: 8px;
+  background-color: blue;
+  color: white;
+}
+
+/* hover case study link to show image */
+.hover_img a {position:relative;}
+.hover_img a span {position:absolute; display:none; z-index:-1;}
+.hover_img a:hover span {display:block; margin-top: -220px;
+  -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein .5s; /* Firefox < 16 */
+    -ms-animation: fadein .5s; /* Internet Explorer */
+     -o-animation: fadein .5s; /* Opera < 12.1 */
+        animation: fadein .5s;
+}
+.hover_img img{height: 300px; opacity: .5; padding: 60px 0px 60px 60px;}
+
+.work-full{
+  margin: 0px auto;
+}
+.work-full img{
+  width: 100%;
+}
+
+.college-icons{
+  padding-top: 40px;
+  margin: 0px auto;
+  text-align: center;
+}
+.college-icons img{
+  max-width: 100%;
+}
+
+.device-center{
+  max-width: 300px;
+  margin: 0px auto;
+}
+.device-center img{
+  width: 100%;
+}
+
+#device {
+  padding-bottom: 150px;
+}
+#device .columns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#device .content{
+    border-radius: 6px;
+    float: left;
+    margin-bottom: 0;
+    padding: 20px;
+}
+#device .content img{
+    max-width: 250px;
+}
+
+#three {
+  padding-bottom: 100px;
+}
+#three .columns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#three .content{
+    border-radius: 6px;
+    float: left;
+    margin-bottom: 0;
+    padding: 20px;
+}
+#three .content img{
+    max-width: 200px;
+}
+
+#brand {
+  padding-bottom: 150px;
+}
+#brand .columns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#brand .content{
+    border-radius: 6px;
+    float: left;
+    margin-bottom: 0;
+    padding: 10px;
+}
+#brand .content img{
+    max-width: 100%;
+}
+#clients{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+}
+#footer {
+  max-width: 100%;
+  padding: 2ch;
+  margin: auto;
+  padding: 8ch 2ch 8ch 2ch;
+  text-align: center;
+  border-top: 1px solid white;
+}
+#footer .links {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  width: 100%;
+}
+#footer .link{
+    border-radius: 6px;
+    float: left;
+    margin-bottom: 0;
+    padding: 20px;
+}
+
+.breadcrumbs{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.crumb{
+    border-radius: 6px;
+    float: left;
+    margin-bottom: 0;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: blue;
+}
+.inactive{
+  opacity: .5;
+}
+
+/* KEYFRAME ANIMATIONS */
+/* fade site in-and-out */
+@keyframes fadeSiteIn { /* [1] */
+    from   { opacity: 0; }
+    to    { opacity: 1; }
+}
+
+@keyframes fadeSiteOut { /* [2] */
+    from   { opacity: 1; }
+    to     { opacity: 0; }
+}
+/* gradient */
+@-webkit-keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+/* arrow bounce */
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translate(0, 15px);
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: translate(0, 3px);
+    opacity: .3;
+  }
+  80% {
+    -webkit-transform: translate(0, 5px);
+    opacity: .7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* fadein */
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* fadeout */
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+@-moz-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+@-webkit-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+@-ms-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+@-o-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 800px) {
+#clients{flex-direction: column;}
+#device .content{padding: 20px 0px 0px 0px; text-align: center;}
+#device .columns{flex-direction: column;}
+#three .content img{max-width: 100%;}
+}
+
+@media only screen and (max-width: 650px) {
+#three .columns{flex-direction: column;}
+#three .content img{max-width: 250px;}
+#brand .columns{flex-direction: column;}
+}
