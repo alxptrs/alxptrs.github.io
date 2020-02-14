@@ -438,10 +438,14 @@ a:hover {
 #brand .columns{flex-direction: column;}
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 480px) {
 @keyframes fadeSiteOut { /* [2] */
       from   { opacity: 1; }
       to     { opacity: 1; }
   }
+}
+
+header h1{
+  font-size: 2.4em;
 }
 }
