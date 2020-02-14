@@ -6,6 +6,9 @@
 html{
   animation: fadeSiteIn .5s ease forwards;
 }
+html.fadeSiteOut {
+  animation:  fadeSiteOut 0.5s ease forwards; /* [2] */
+}
 body {
   font-family: Akkurat,sans-serif;
   font-weight: 400;

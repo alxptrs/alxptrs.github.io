@@ -11,6 +11,13 @@
   <link rel="stylesheet" href="https://use.typekit.net/xgd1upn.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>
+  window.onpageshow = function (event) {
+    if (event.persisted) {
+        window.location.reload();
+    }
+  };
+  </script>
+  <script>
   $(document).ready(function(){
     // Add smooth scrolling to all links
     $("a").on('click', function(event) {
