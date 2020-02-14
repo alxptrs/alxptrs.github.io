@@ -47,15 +47,18 @@ nav {
 
 header {
   height: 100vh;
-  margin-bottom: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: table-cell;
+  vertical-align: middle;
   -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
    -moz-animation: fadein 4s; /* Firefox < 16 */
     -ms-animation: fadein 4s; /* Internet Explorer */
      -o-animation: fadein 4s; /* Opera < 12.1 */
         animation: fadein 4s;
+}
+
+.intro{
+  vertical-align: middle;
+  display: inline-block;
 }
 
 main {
@@ -78,6 +81,7 @@ h2 {
 }
 .alex{
   position: absolute;
+  top: 200px;
   left: 10%;
   z-index:-1;
   opacity: .4;
@@ -92,6 +96,7 @@ h2 {
 .alex-outline{
   opacity: .6;
   position: absolute;
+  top: 200px;
   left: 13%;
   margin-top: 6%;
   z-index:0;
@@ -102,6 +107,7 @@ h2 {
 .alex-gradient{
   opacity: .5;
   position: absolute;
+  top: 200px;
   left: 10%;
   z-index:-1;
   width: 200px;
@@ -430,9 +436,7 @@ a:hover {
 }
 
 @media only screen and (max-width: 375px) {
-h1{font-size: 2.4em;
-
-  @keyframes fadeSiteOut { /* [2] */
+@keyframes fadeSiteOut { /* [2] */
       from   { opacity: 1; }
       to     { opacity: 1; }
   }
