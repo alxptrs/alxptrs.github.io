@@ -71,11 +71,7 @@
     <h1>Designing a Unified&nbsp;System<br>–</h1>
     <p>We launched the SportsHi MVP in late 2018. At that time, the idea of the product and company were still evolving. Over the course of the next year, design and engineering of new features was rapid and ad hoc. This lead to inconsistencies throughout the UI/UX. It was clear we needed an overarching system to guide our design.</p>
     <p>In mid-2019, I began research on design systems and planned a course of action for implementation at SportsHi. Today, with an in-house engineering team, research and user testing, a clear vision of the product, and an active user-base, we are rebuilding the product from the ground-up with the SportsHi Design System keeping the digital experience consistent.</p>
-
-  <div class="spacer"></div>
-  <h2>Inventory</h2>
-  After research, the first step was to conduct an inventory/internal audit of the app. It revealed inconsistencies in components, a varied palette with too many HEX codes, and contrasting UX patterns.
-  <div style="margin: 0px auto; text-align: center; padding-top: 40px;"><img width="100%" src="img/design-system/inventory.jpg" /></div><p style="text-align: center; font-size: 10px;">Screenshots, screenshots, screenshots!<br></p>
+    <p>The SportsHi Design System covers typography, colors, iconography, standard UI principles (grids, spacing, layout), UI elements and components, and motion. This has all been documented for designers and developers: a single source of truth Sketch file, a Sketch library, and an online design system website for internal use.</p>
 
   <div class="spacer"></div>
   <h2>Colors</h2>
@@ -83,7 +79,7 @@
   <img width="100%" src="img/design-system/hexcodes.jpg" /><br><br>
   <p>When reproaching the color palette, I reduced the number of colors used in the app to our primary and secondary color, blacks and grays for text and UI, background and overlays, and a few accent colors. There was now an easy variable system attached to each color group which gives ease to designers and developers. The introduction of gradations of hues and more grays made creating UI components much quicker and more visually consistent.</p>
   <img width="100%" src="img/design-system/colorfirstpass.jpg" /><p style="text-align: center; font-size: 12px;">First pass of color palette with gradations</p><br>
-  <p><b>Final color system</b></p>
+  <p><h3>Final color system</h3></p>
   <img width="100%" src="img/design-system/colors.jpg" />
 
   <div class="spacer"></div>
@@ -93,18 +89,42 @@
 
   <div class="spacer"></div>
   <h2>Icon System</h2>
+  <p>The use of icons in the app needed a major overhaul. I scrapped everything and created a new icon system. Icons are based on a 24px grid with varying margins. This allows for four icon sizes: 12px, 16px, 20px and 24px. All icons have a bounding box of 24px to allow for symbol overrides in Sketch. Icons have a 2px line width. An icon naming system was also added.</p>
+  <img width="100%" src="img/design-system/iconsystem.jpg" /><br><br>
+  <p><h3>Illustrative icons</h3></p>
+  <p>In addition to system icons, the app also uses icons to illustrate sports, users, groups, and events.</p>
+  <img width="100%" src="img/design-system/illustrations.jpg" />
+
+  <div class="spacer"></div>
+  <h2>Standard UI Properties</h2>
+  <p>During the app inventory, it was clear there was major inconsistency in standards of UI components. Although these are subtle, they are the foundation of creating a consistent UI: border-radius, border thicknesses, box shadows, grids and gutters, spacing metrics. I found designing with an 8pt soft grid was the most flexible across platforms.</p>
+  <img width="100%" src="img/design-system/uiproperties.jpg" />
+
+  <div class="spacer"></div>
+  <h2>UI Components</h2>
+  A selection of the UI components from the Sketch UI Kit.
+  <h3>Buttons</h3>
+  <img width="100%" src="img/design-system/buttons.jpg" />
+  <h3>Fields</h3>
+  <img width="100%" src="img/design-system/fields.jpg" />
+  <h3>Lists</h3>
+  <img width="100%" src="img/design-system/lists.jpg" />
+  <h3>Profile photos and images</h3>
+  <img width="100%" src="img/design-system/images.jpg" />
+  <h3>Navigation</h3>
+  <img width="100%" src="img/design-system/nav.jpg" />
 
   <div class="spacer"></div>
 
   <h2>Documentation</h2>
-  The SportsHi Design System has been made available internally in the form of a Sketch UI Kit library. The goal is to create an online tool for use by designers and developers containing all desing guidelines, files, and a component library for React Native.
-    <p class="button"><span class="button-text">Download Sketch UI Kit</span></p>
+  The SportsHi Design System has been made available internally in the form of a Sketch UI Kit library. An online tool for use by designers and developers contains all desing guidelines, files, and a component library for React Native.
+  <p class="button"><span class="button-text">Download Sketch UI Kit</span></p>
 
   <div class="spacer"></div>
   <div style="border-bottom: 1px solid white;"></div>
   <div class="spacer"></div>
 
-  <h1>Additional Case Studies</h1>
+  <h1>Additional Case&nbsp;Studies</h1>
 
   <p class="overline"><span class="overline-text">iOS & ANDROID APP</span></p>
      <a href="sportshi-app.html"><h2>SportsHi From Ideation to&nbsp;Launch ⇢</h2></a>
