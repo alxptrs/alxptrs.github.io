@@ -183,6 +183,31 @@ a:hover {
   color: white;
 }
 
+.ball_device img{
+  position: absolute;
+  max-width: 300px;
+  padding-top: 60px;
+  right: calc(20% - 100px);
+  z-index: 1;
+}
+
+/* video in div */
+.video-container {
+    height: 300px;
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+}
+
+video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
 /* hover case study link to show image */
 .hover_img a {position:relative;}
 .hover_img a span {position:absolute; display:none; z-index:-1;}
