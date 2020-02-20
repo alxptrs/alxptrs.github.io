@@ -187,7 +187,7 @@ a:hover {
   position: absolute;
   max-width: 300px;
   padding-top: 60px;
-  right: calc(20% - 100px);
+  right: calc(28% - 100px);
   z-index: 1;
 }
 
