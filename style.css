@@ -58,6 +58,14 @@ header {
         animation: fadein 2s;
 }
 
+.fade{
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+     -o-animation: fadein 2s; /* Opera < 12.1 */
+        animation: fadein 2s;
+}
+
 main {
   max-width: 90ch;
   padding: 3ch;
@@ -182,13 +190,16 @@ a:hover {
   background-color: blue;
   color: white;
 }
+.ball_device{
+  position: relative;
+  z-index: 1;
+}
 
 .ball_device img{
   position: absolute;
-  max-width: 300px;
+  right: 0;
   padding-top: 60px;
-  right: calc(28% - 100px);
-  z-index: 1;
+  max-width: 300px;
 }
 
 /* video in div */
@@ -261,6 +272,26 @@ video {
 }
 #device .content img{
     max-width: 250px;
+}
+
+#two {
+  padding-bottom: 100px;
+}
+#two .columns {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+#two .content{
+    border-radius: 6px;
+    float: left;
+    margin-bottom: 0;
+    padding-right: 60px;
+}
+
+#two .content img{
+    width: 300px;
 }
 
 #three {
@@ -451,6 +482,9 @@ video {
 #three .columns{flex-direction: column;}
 #three .content img{max-width: 250px;}
 #brand .columns{flex-direction: column;}
+#two .columns{flex-direction: column;}
+#two .content{padding-right: 0px !important;}
+#two .content img{width: 100%;}
 }
 
 @media only screen and (max-width: 500px) {
