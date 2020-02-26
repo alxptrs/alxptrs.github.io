@@ -3,6 +3,16 @@
   src: url(fonts/Akkurat.ttf);
 }
 
+@font-face {
+  font-family: Akkurat-Bold;
+  src: url(fonts/Akkurat-Bold.ttf);
+}
+
+@font-face {
+  font-family: Akkurat-Light;
+  src: url(fonts/Akkurat-Light.ttf);
+}
+
 html{
   animation: fadeSiteIn .5s ease forwards;
 }
@@ -46,7 +56,6 @@ nav {
 }
 
 header {
-  overflow-x: hidden;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -56,6 +65,26 @@ header {
     -ms-animation: fadein 2s; /* Internet Explorer */
      -o-animation: fadein 2s; /* Opera < 12.1 */
         animation: fadein 2s;
+}
+
+header img{
+  max-width: 100%;
+}
+
+app {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+     -o-animation: fadein 2s; /* Opera < 12.1 */
+        animation: fadein 2s;
+}
+
+app img{
+  max-width: 100%;
 }
 
 .fade{
@@ -81,6 +110,26 @@ h2 {
   font-size: 2em;
   font-family: Akkurat,sans-serif;
   font-weight: 400;
+  font-style: normal;
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style-type: square;
+  padding: 0;
+  margin: 10px;
+}
+
+li {
+  margin: 10px;
+  padding-left: 16px;
+}
+
+.bold {
+  font-size: 4em;
+  text-align: center;
+  font-family: Akkurat-Bold,sans-serif;
+  font-weight: 600;
   font-style: normal;
   margin-bottom: 2rem;
 }
@@ -160,6 +209,11 @@ a {
 a:hover {
   text-decoration: underline;
 }
+.bluelink{
+  padding: 2px 4px 2px 4px;
+  background-color: blue;
+  color: white;
+}
 ::selection {
   background-color: blue;
   color: white;
@@ -195,17 +249,10 @@ a:hover {
   z-index: 1;
 }
 
-.ball_device img{
-  position: absolute;
-  right: 0;
-  padding-top: 60px;
-  max-width: 300px;
-}
-
 /* video in div */
 .video-container {
     height: 300px;
-    width: 80%;
+    width: 100%;
     overflow: hidden;
     position: relative;
 }
@@ -312,6 +359,33 @@ video {
 #three .content img{
     max-width: 200px;
 }
+
+#colleges{
+  padding-top: 40px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#colleges img{
+  margin-left: -40px;
+  display: inline-block;
+  max-width: 164px;
+  transform: perspective(700px) rotateY(45deg);
+  padding-bottom: 40px;
+}
+
+#colleges img:hover{
+  transform: perspective(700px) rotateY(20deg);
+}
+
+@media only screen and (max-width: 840px) {#colleges img{max-width: 140px;}}
+@media only screen and (max-width: 695px) {#colleges img{max-width: 120px;}}
+@media only screen and (max-width: 580px) {#colleges img{max-width: 100px;}}
+@media only screen and (max-width: 460px) {#colleges img{max-width: 80px;}}
+
 
 #brand {
   padding-bottom: 150px;
