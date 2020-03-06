@@ -126,12 +126,8 @@ li {
 }
 
 .bold {
-  font-size: 4em;
-  text-align: center;
   font-family: Akkurat-Bold,sans-serif;
   font-weight: 600;
-  font-style: normal;
-  margin-bottom: 2rem;
 }
 .alex{
   position: absolute;
