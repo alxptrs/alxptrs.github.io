@@ -1,3 +1,60 @@
-<html>
-<p>working on it</p>
+<!DOCTYPE html>
+<html lang=en class="lights-on" onclick="myfunc(this)">
+  <head>
+    <title>ALEX PETERS | Design</title>
+    <meta name="description" content="Alex Peters is a multidisciplinary designer based in New York City.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/fav.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <p>
+        <span style="text-transform: uppercase;"><b>Alex Peters</b> is a multidisciplinary artist based in New York City</span><br>
+        ART DIRECTION + UI/UX + BRANDING
+      </p>
+<br>
+      <p>
+        Currently:<br>
+        <a href="http://320.systems">320 Systems</a><br>
+      </p>
+<br>
+      <p>
+        Clients include:<br>
+        Saks Fifth Avenue<br>
+        Harry's<br>
+        Rent The Runway<br>
+        National Geographic<br>
+        Smithsonian
+      </p>
+<br>
+      <p>
+        Contact:<br>
+        info@alexpeters.design
+      </p>
+<br>
+      <p>
+        Resume available upon request.
+      </p>
+
+    </div>
+  </body>
+
+<footer>© Alex Peters 2022</footer>
+
+<script type="text/javascript">
+  function myfunc(div) {
+    var className = div.getAttribute("class");
+    if(className=="lights-off") {
+      div.className = "lights-on";
+    }
+    else{
+      div.className = "lights-off";
+    }
+  }
+</script>
+
 </html>
