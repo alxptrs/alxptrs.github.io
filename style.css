@@ -1,0 +1,18 @@
+body{
+  margin: 20px;
+  font-family: "Favorit Std", sans-serif;
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+footer{
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin: 20px;
+}
+
+.lights-off{background-color:black; color:white;} .lights-off a, .lights-off a:visited{color: white;}
+.lights-on{background-color:white; color:black;} .lights-on a, .lights-on a:visited{color: black;}
+
+a, a:visited{text-decoration: none;}
