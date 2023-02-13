@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=en class="lights-on" onclick="myfunc(this)">
+<html lang=en>
   <head>
     <title>ALEX PETERS | Design</title>
     <meta name="description" content="Alex Peters is a multidisciplinary designer based in New York City.">
@@ -8,35 +8,58 @@
     <link rel="shortcut icon" href="img/fav.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
   </head>
 
   <body>
-    <div>
-      <p>
-        <span style="text-transform: uppercase;"><b>Alex Peters</b> is a multidisciplinary artist based in New York City</span><br>
-        ART DIRECTION + UI/UX + BRANDING
-      </p>
-<br>
-      <p>
-        Clients include:<br>
+
+    <div id="container">
+
+    <div id="left">
+      
+        <span style="text-transform: uppercase;">Alex Peters is a multidisciplinary artist based in Berlin</span><br>
+        ART DIRECTION + UI/UX + WEB DESIGN
+
+      <div class="dropdown" onclick="showClients()">SELECT CLIENTS [+]</div>
+      <div id="clients">
         Saks Fifth Avenue<br>
         Harry's<br>
         Rent The Runway<br>
         National Geographic<br>
-        Smithsonian<br>
-        Sabrina Carpenter
-      </p>
-<br>
-      <p>
-        Contact:<br>
+        Smithsonian
+      </div>
+
+      <div class="dropdown" onclick="showSkills()">CAPABILITIES [+]</div>
+      <div id="skills">
+        UI / UX - Web + Mobile Apps<br>
+        Web Design<br>
+        Web Development<br>
+        Wireframing<br>
+        Brand Strategy<br>
+        Visual Identity<br>
+        Art Direction
+      </div>
+
+      <div class="dropdown" onclick="showInfo()">INFO [+]</div>
+      <div id="info">
         info@alexpeters.design
-      </p>
-<br>
-      <p>
+        <p>
         Resume available upon request.
       </p>
-
+      </div>
     </div>
+
+  <div id="right">
+    <div class="column column-4">
+      <div class="column column-1"><div>BLEAK NARRATIVE<br><br>+ Art Direction<br>+ Branding<br>+ Web Design<br><br><a href="https://bleak.wtf">bleak.wtf ⋆｡°✩</a></div></div>
+      <div class="column column-3">
+        <img src="imgs/web.jpg" />
+      </div>
+    </div>
+  </div>
+
+  </div>
+
   </body>
 
 <footer>© Alex Peters 2023</footer>

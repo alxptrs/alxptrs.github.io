@@ -1,8 +1,17 @@
+@font-face {
+    font-family: "Silkamono";
+    src: url("fonts/silkamono-regular-webfont.ttf");
+}
+
+html{
+    font-family: "Silkamono", sans-serif;
+}
+
 body{
   margin: 20px;
-  font-family: "Favorit Std", sans-serif;
   font-weight: lighter;
-  font-size: 12px;
+  font-size: 10px;
+  letter-spacing: -.5px;
 }
 
 footer{
@@ -12,7 +21,40 @@ footer{
   margin: 20px;
 }
 
-.lights-off{background-color:black; color:white;} .lights-off a, .lights-off a:visited{color: white;}
-.lights-on{background-color:white; color:black;} .lights-on a, .lights-on a:visited{color: black;}
+a, a:visited{text-decoration: none; color: black;}
 
-a, a:visited{text-decoration: none;}
+
+#container{display: flex; flex-direction: row; margin: 0; column-gap: 20px;}
+
+/* LEFT COLUMN */
+
+#left{width: 50vw;}
+#clients, #skills, #info{display: none;}
+.dropdown{cursor: crosshair; user-select: none; margin-top: 20px; margin-bottom: 12px;}
+
+/* RIGHT COLUMN */
+
+#right{width: 50vw; margin: 0;}
+
+.column{display: flex; flex-direction: row; column-gap: 20px;}
+
+.column-1{width: 17.25vw;}
+.column-2{width: 34.5vw;}
+.column-3{width: 42.25vw;}
+.column-4{width: 50vw;}
+
+.column img{width: 100%;}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 800px) {
+
+  #container{width: 100vw; flex-direction: column;}
+  .column{flex-direction: column-reverse;}
+  .column img{width: calc(100% - 40px); margin-bottom: 20px;}
+
+  .column-1{width: 100vw;}
+  .column-2{width: 100vw;}
+  .column-3{width: 100vw;}
+  .column-4{width: 100vw;}
+}
