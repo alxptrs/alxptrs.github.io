@@ -28,7 +28,7 @@ a, a:visited{text-decoration: none; color: black;}
 
 /* LEFT COLUMN */
 
-#left{width: 50vw;}
+#left{width: 50vw; margin-bottom: 20px;}
 #clients, #skills, #info{display: none;}
 .dropdown{cursor: crosshair; user-select: none; margin-top: 20px; margin-bottom: 12px;}
 
@@ -38,19 +38,19 @@ a, a:visited{text-decoration: none; color: black;}
 
 .column{display: flex; flex-direction: row; column-gap: 20px;}
 
-.column-1{width: 17.25vw;}
+.column-1{width: 17.25vw; margin-bottom: 20px;}
 .column-2{width: 34.5vw;}
 .column-3{width: 42.25vw;}
 .column-4{width: 50vw;}
 
-.column img{width: 100%;}
+.column img{width: 100%; margin-bottom: 20px;}
 
 /* MEDIA QUERIES */
 
 @media (max-width: 800px) {
 
   #container{width: 100vw; flex-direction: column;}
-  .column{flex-direction: column-reverse;}
+  .column{flex-direction: column-reverse; margin-top: 20px;}
   .column img{width: calc(100% - 40px); margin-bottom: 20px;}
 
   .column-1{width: 100vw;}
