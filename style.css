@@ -38,7 +38,7 @@ a, a:visited{text-decoration: none; color: black;}
 
 .column{display: flex; flex-direction: row; column-gap: 20px;}
 
-.column-1{width: 17.25vw; margin-bottom: 20px;}
+.column-1{width: 17.25vw; margin-bottom: 40px;}
 .column-2{width: 34.5vw;}
 .column-3{width: 42.25vw;}
 .column-4{width: 50vw;}
