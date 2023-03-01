@@ -1,17 +1,23 @@
 @font-face {
-    font-family: "Silkamono";
-    src: url("fonts/silkamono-regular-webfont.ttf");
+    font-family: "Sneak";
+    src: url("fonts/Sneak-Regular.woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Sneak";
+    src: url("fonts/Sneak-Bold.woff");
+    font-weight: 700;
 }
 
 html{
-    font-family: "Silkamono", sans-serif;
+    font-family: "Sneak", sans-serif;
 }
 
 body{
   margin: 20px;
   font-weight: lighter;
   font-size: 10px;
-  letter-spacing: -.5px;
 }
 
 footer{
@@ -19,10 +25,18 @@ footer{
   right: 0;
   position: fixed;
   margin: 20px;
+  mix-blend-mode: difference;
+  color: black;
 }
 
 a, a:visited{text-decoration: none; color: black;}
 
+.darling{display: flex; justify-content: center; height: 500px; background-image: url('imgs/darling.jpeg'); background-position: center; background-size: cover;}
+.groupblack{display: flex; justify-content: center; height: 400px; background: black; background-position: center; background-size: cover;}
+.giant{display: flex; justify-content: center; background-image: url('imgs/giant.jpeg'); background-position: center; background-size: 160%;}
+.giant-img{position: relative; z-index: 999; filter: drop-shadow(5px 10px 20px rgba(0, 0, 0, .5)); margin-bottom: 0px !important;}
+
+.div-width{width: 100%; margin-bottom: 20px;}
 
 #container{display: flex; flex-direction: row; margin: 0; column-gap: 20px;}
 
@@ -48,8 +62,13 @@ a, a:visited{text-decoration: none; color: black;}
 /* MEDIA QUERIES */
 
 @media (max-width: 800px) {
+  html{overflow-x: hidden;}
 
-  #container{width: 100vw; flex-direction: column;}
+  .div-width{width: calc(100vw - 40px)}
+
+  #left{width: calc(100vw - 40px)}
+
+  #container{width: calc(100vw - 40px); flex-direction: column;}
   .column{flex-direction: column-reverse; margin-top: 20px;}
   .column img{width: calc(100% - 40px); margin-bottom: 20px;}
 
