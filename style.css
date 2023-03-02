@@ -12,6 +12,7 @@
 
 html{
     font-family: "Sneak", sans-serif;
+    overflow-x: hidden;
 }
 
 body{
@@ -25,7 +26,6 @@ footer{
   right: 0;
   position: fixed;
   margin: 20px;
-  mix-blend-mode: difference;
   color: black;
 }
 
