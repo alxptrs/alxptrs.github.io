@@ -34,7 +34,7 @@ a, a:visited{text-decoration: none; color: black;}
 
 .darling{display: flex; justify-content: center; height: 500px; background-image: url('imgs/darling.jpeg'); background-position: center; background-size: cover;}
 .groupblack{display: flex; justify-content: center; height: 400px; background: rgb(227, 228, 229);}
-.giant{display: flex; justify-content: center; background-image: url('imgs/giant.jpeg'); background-position: center; background-size: 160%;}
+.giant{padding: 40px 0px 40px 0px; display: flex; justify-content: center; background-image: url('imgs/giant.jpeg'); background-position: center; background-size: 160%;}
 .giant-img{position: relative; z-index: 999; filter: drop-shadow(5px 10px 20px rgba(0, 0, 0, .5)); margin-bottom: 0px !important;}
 .milkmoney{display: flex; justify-content: center; min-height: 400px; background-color: black;}
 .crater{display: flex; justify-content: center; min-height: 400px; background-image: url('imgs/crater.jpeg'); background-position: center; background-size: cover;}
