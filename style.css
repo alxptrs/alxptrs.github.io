@@ -28,6 +28,7 @@ footer{
   position: fixed;
   margin: 20px;
   color: black;
+  z-index:999999;
 }
 
 a, a:visited{text-decoration: none; color: black;}
