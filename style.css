@@ -37,7 +37,7 @@ a, a:visited{text-decoration: none; color: black;}
 .giant-img{position: relative; z-index: 999; filter: drop-shadow(5px 10px 20px rgba(0, 0, 0, .5)); margin-bottom: 0px !important;}
 .milkmoney{display: flex; justify-content: center; min-height: 400px; background-color: black;}
 .crater{display: flex; justify-content: center; min-height: 400px; background-image: url('imgs/crater.jpeg'); background-position: center; background-size: cover;}
-.sabrina{display: flex; justify-content: center; min-height: 400px; background-color: black;}
+.sabrina{display: flex; justify-content: center; min-height: 400px; border: 1px solid black;}
 
 .div-width{width: 100%; margin-bottom: 20px;}
 
