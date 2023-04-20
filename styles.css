@@ -72,6 +72,7 @@ footer{height: 300px; display: flex; justify-content: center; align-items: cente
 /* RESPONSIVE STATES */
 
 @media (max-width: 633px) {
+    body{font-size: 20px;}
     .container{margin-top: 50px;}
     .cover-groupblack, .cover-crater, .cover-darling{height: 400px;}
     .work-type{text-align: left; margin-top: 40px;}
