@@ -38,8 +38,7 @@ footer{height: 300px; display: flex; justify-content: center; align-items: cente
 .cover-crater{display: flex; justify-content: center; align-content: center; min-height: 700px; background-image: url('imgs-new/home-crater.jpg'); background-position: center; background-size: cover;}
 .cover-darling{display: flex; justify-content: center; align-content: center; min-height: 700px; background-image: url('imgs-new/home-darling.jpg'); background-position: center; background-size: cover;}
 
-/* INFO */
-.info{margin-top: 40px; max-width: 550px; }
+.info{max-width: 400px;}
 
 /* WORK */
 .work{display: flex; flex-direction: row; justify-content: space-between; flex-wrap: wrap; column-gap: 40px; margin-top: 20px;}
@@ -72,9 +71,12 @@ footer{height: 300px; display: flex; justify-content: center; align-items: cente
 /* RESPONSIVE STATES */
 
 @media (max-width: 633px) {
+
     body{font-size: 20px;}
+
     .container{margin-top: 50px;}
     .cover-groupblack, .cover-crater, .cover-darling{height: 400px;}
     .work-type{text-align: left; margin-top: 40px;}
     .work-bleak-wordmark{width: 80%;}
+
 }
