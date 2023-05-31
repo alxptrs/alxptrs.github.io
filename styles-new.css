@@ -116,7 +116,7 @@ p{padding-bottom: 20px;}
 }
 
 .stats-container{display: flex; flex-direction: row; column-gap: 10px; row-gap: 20px; flex-wrap: wrap;}
-.stats{display: inline-block; padding: 20px; border: 1px solid white; border-radius: 50px; font-size: 14px; height: 20px;}
+.stats{display: inline-block; padding: 20px; border: 1px solid white; border-radius: 50px; font-size: 14px; min-height: 20px;}
 
 /* ANIMATIONS */
 @keyframes pageFade {
