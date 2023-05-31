@@ -1,23 +1,55 @@
 @font-face {
     font-family: "Neue Haas Grotesk";
-    src: url("fonts/Sneak-Regular.woff");
+    src: url("fonts/NeueHaasGrotesk-Regular.woff");
     font-weight: 400;
+}
+
+@font-face {
+    font-family: "Neue Haas Grotesk";
+    src: url("fonts/NeueHaasGrotesk-Medium.woff");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Junicode Condensed";
+    src: url("fonts/Junicode-RegularCondensed.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Junicode Condensed";
+    src: url("fonts/Junicode-BoldCondensed.ttf");
+    font-weight: 700;
 }
 
 html{
     font-family: "Neue Haas Grotesk", sans-serif;
     overflow-x: hidden;
-    background-color: #FAFAFA;
+    background-color: black;
 }
 
 body{
-  margin: 20%;
-  font-size: 24px;
+  margin: 60px;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  color: white;
 }
 
-a, a:visited{text-decoration: none; color: black;}
+.inside{
+    width: 100%;
+    max-width: 600px;
+    animation: pageFade ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    }
+
+a, a:visited{text-decoration: none; color: white;}
 
 p{padding-bottom: 20px;}
+
+.work{padding: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 14px; text-align: center; font-family: "Neue Haas Grotesk", sans-serif;}
+.work img{max-width: 600px; border-radius: 8px;}
 
 .hi{animation: fadeInAnimation ease 1s; animation-iteration-count: 1;animation-fill-mode: forwards; display: inline-block;}
 .im{animation: fadeInAnimation ease 2s; animation-iteration-count: 1;animation-fill-mode: forwards; display: inline-block;}
@@ -29,8 +61,73 @@ p{padding-bottom: 20px;}
     animation-fill-mode: forwards;
 }
 
+/* INFO */
+.info{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    padding: 10px 20px 10px 20px;
+    width: auto;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+    background-color: rgba(250, 250, 250, .8);
+    backdrop-filter: blur(20px);
+    z-index: 9999;
+    animation: fadeInfo ease 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;}
+
+/* PROJECTS */
+
+.back{font-size: 14px; letter-spacing: 2px;}
+.project{width: 100%; display: flex; flex-direction: row; justify-content: space-between; flex-wrap: wrap;}
+.project-info{max-width: 400px;}
+.project-info-description{font-size: 18px;}
+.project-content{max-width: 600px;}
+.project-content img{max-width: 100%;}
+.project-content-description{font-size: 18px;}
+
+/* PROJECTS - BLEAK */
+.squareContainer {width: 800px; height: 800px; display: inline-block;}
+
+/* PROJECTS - SPORTSHI */
+.video-container {
+  position: relative;
+  width: 100%;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+}
+
+.video-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.stats-container{display: flex; flex-direction: row; column-gap: 10px; row-gap: 20px; flex-wrap: wrap;}
+.stats{display: inline-block; padding: 20px; border: 1px solid white; border-radius: 50px; font-size: 14px; height: 20px;}
 
 /* ANIMATIONS */
+@keyframes pageFade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -41,4 +138,29 @@ p{padding-bottom: 20px;}
     100% {
         opacity: 1;
      }
+}
+
+@keyframes fadeInfo {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+     }
+}
+
+/* RESPONSIVE */
+@media (max-width: 650px) {
+
+    .work img{max-width: 400px;}
+
 }
