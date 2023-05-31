@@ -157,3 +157,8 @@ p{padding-bottom: 20px;}
         opacity: 0;
      }
 }
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+    body{margin: 40px;}
+}
