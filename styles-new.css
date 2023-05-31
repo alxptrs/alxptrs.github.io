@@ -159,7 +159,7 @@ p{padding-bottom: 20px;}
 }
 
 /* RESPONSIVE */
-@media (max-width: 650px) {
+@media (max-width: 667px) {
 
     .work img{max-width: calc(100vw - 120px);}
 
