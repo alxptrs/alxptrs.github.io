@@ -161,6 +161,6 @@ p{padding-bottom: 20px;}
 /* RESPONSIVE */
 @media (max-width: 650px) {
 
-    .work img{max-width: 400px;}
+    .work img{max-width: calc(100vw - 120px);}
 
 }
